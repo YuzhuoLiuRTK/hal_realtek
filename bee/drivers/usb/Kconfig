@@ -4,7 +4,7 @@
 config REALTEK_USB
 	bool "RealTek MCU usb driver"
 	default y
-	depends on USE_HAL_REALTEK_USB
+	depends on USE_HAL_REALTEK_USB || UDC_DRIVER
 
 config REALTEK_USING_USB_HAL
 	bool "RealTek usb hal library"
